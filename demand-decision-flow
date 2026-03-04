@@ -1,0 +1,51 @@
+# Demand Intelligence Decision Flow
+
+The Demand Intelligence Platform converts raw demand signals into actionable forecasts that power operational and financial decisions across commerce systems.
+
+The system integrates demand signals, machine learning forecasting models and planning workflows to generate accurate demand projections.
+
+## Demand Forecast Generation
+
+Demand signals from multiple sources are aggregated and transformed into forecasting features.
+
+Inputs include:
+
+• Historical sales  
+• Traffic signals  
+• Promotions and campaigns  
+• Seasonality and calendar events  
+• Product attributes  
+
+These signals feed into forecasting models which generate SKU-level demand projections.
+
+## Forecast Consumption
+
+Demand forecasts power several downstream planning systems across the commerce ecosystem.
+
+Inventory Planning  
+Forecasts determine optimal inventory levels across warehouses.
+
+Replenishment Planning  
+Demand signals trigger replenishment recommendations.
+
+Supply Planning  
+Forecasts guide vendor purchasing and production planning.
+
+Capacity Planning  
+Demand projections support warehouse and logistics capacity planning.
+
+Financial Planning  
+Revenue forecasts are used for financial projections.
+
+## Integration with Inventory Decision Engine
+
+Demand forecasts serve as a key input for the Inventory Decision Engine.
+
+The forecasting platform provides demand projections that power:
+
+• automatic replenishment decisions  
+• smart buying recommendations  
+• inventory allocation across stores  
+• ageing detection and pricing actions  
+
+Together, these systems enable automated inventory management across large commerce platforms.
