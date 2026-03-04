@@ -29,25 +29,3 @@ Tracks forecast accuracy and continuously improves model performance.
 • Improved customer SLA by 0.5 days  
 • 50% reduction in under-utilisation costs  
 • 4% increase in sell-through rate  
-
-## Architecture
-
-+--------------------------------------------------+
-|                   DATA SOURCES                   |
-| Sales | Traffic | Promotions | Seasonality       |
-+--------------------------+----------------------+
-                           ↓
-+--------------------------------------------------+
-|             DEMAND SIGNAL PROCESSING             |
-| Price Elasticity | Event| Trends| MRP            |
-+--------------------------+----------------------+
-                           ↓
-+--------------------------------------------------+
-|                FORECASTING ENGINE                |
-| Random Forest | Spike Method | Revcon Projection |
-+--------------------------+----------------------+
-                           ↓
-+--------------------------------------------------+
-|               BUSINESS APPLICATIONS              |
-| Inventory Plan | Manpower Plan | Capacity Plan   |
-+--------------------------------------------------+
