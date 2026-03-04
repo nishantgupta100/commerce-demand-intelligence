@@ -1,13 +1,25 @@
+# Demand Intelligence Platform Architecture
+
+The forecasting system operates across five layers:
+
+1. Data Sources – ingest demand signals from multiple operational systems.
+2. Signal Processing – transform raw data into forecasting features.
+3. Forecasting Engine – generate SKU-level demand forecasts.
+4. Forecast Consumption – power inventory, purchasing and supply planning decisions.
+5. Monitoring & Feedback – track forecast accuracy and improve models continuously.
+
+
 ## Architecture
 
 +--------------------------------------------------+
 |                   DATA SOURCES                   |
 | Sales | Traffic | Promotions | Seasonality       |
+| Market Signals | Marketing Budget                |
 +--------------------------+----------------------+
                            ↓
 +--------------------------------------------------+
 |             DEMAND SIGNAL PROCESSING             |
-| Price Elasticity | Event| Trends| MRP            |
+| Price Elasticity | Event| Trends| Back testing   |
 +--------------------------+----------------------+
                            ↓
 +--------------------------------------------------+
@@ -18,4 +30,10 @@
 +--------------------------------------------------+
 |               BUSINESS APPLICATIONS              |
 | Inventory Plan | Manpower Plan | Capacity Plan   |
++--------------------------------------------------+
+                           ↓
++--------------------------------------------------+
+|             MONITORING & FEEDBACK                |
+| Forecast Accuracy | MAPE Tracking                |
+| Service level tracking | Monthly SCM Cost        |
 +--------------------------------------------------+
