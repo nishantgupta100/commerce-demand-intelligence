@@ -37,3 +37,84 @@ The forecasting system operates across five layers:
 | Forecast Accuracy | MAPE Tracking                |
 | Service level tracking | Monthly SCM Cost        |
 +--------------------------------------------------+
+
+
+
+Data Sources
+     ↓
+Data Ingestion Layer
+     ↓
+Data Lake / Warehouse
+     ↓
+Feature Engineering Layer
+     ↓
+Forecasting Models
+     ↓
+Forecast Aggregation Layer
+     ↓
+Inventory Planning Engine
+     ↓
+Execution Systems (OMS/WMS)
+
+Data Sources
+| Data Type          | Examples                            |
+| ------------------ | ----------------------------------- |
+| Sales data         | historical SKU sales                |
+| Product attributes | category, color, style, fabric      |
+| Pricing            | price, discount                     |
+| Marketing          | ad campaigns, influencer promotions |
+| Customer behavior  | clicks, searches, add-to-cart       |
+| Seasonality        | festivals, holidays                 |
+| Weather            | temperature, rainfall               |
+| Inventory          | stock availability                  |
+| Social signals     | trending styles                     |
+
+
+Data Ingestion
+| Type                | Examples |
+| ------------------- | -------- |
+| Streaming pipelines | Kafka    |
+| Batch pipelines     | Airflow  |
+| ETL pipelines       | Spark    |
+
+Data Storage
+| Storage        | Purpose                 |
+| -------------- | ----------------------- |
+| Data lake      | raw event data          |
+| Data warehouse | cleaned analytical data |
+
+Features
+| Feature                  | Example      |
+| ------------------------ | ------------ |
+| 7-day sales trend        | growth rate  |
+| discount percentage      | 30%          |
+| product views            | 20,000       |
+| add-to-cart rate         | 5%           |
+| search popularity        | rising trend |
+| weather index            | winter onset |
+| product similarity score | similar SKUs |
+
+
+Forecasting & Model Selection
+| Model Type            | Purpose              |
+| --------------------- | -------------------- |
+| Time series models    | baseline demand      |
+| ML models             | demand drivers       |
+| similarity models     | new product forecast |
+| demand sensing models | short-term signals   |
+
+Inventory Decisions
+| Planning Decision       | Example           |
+| ----------------------- | ----------------- |
+| procurement quantity    | how much to order |
+| warehouse allocation    | where to stock    |
+| replenishment frequency | restock schedule  |
+| safety stock            | buffer inventory  |
+
+Fulfillment Systems
+| System                | Role                 |
+| --------------------- | -------------------- |
+| OMS                   | order management     |
+| WMS                   | warehouse operations |
+| logistics system      | shipping planning    |
+| merchandising systems | assortment planning  |
