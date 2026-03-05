@@ -14,12 +14,12 @@ The forecasting system operates across five layers:
 +--------------------------------------------------+
 |                   DATA SOURCES                   |
 | Sales | Traffic | Promotions | Seasonality       |
-| Market Signals | Marketing Budget                |
+| Market Signals | Marketing Budget  | Events      |
 +--------------------------+----------------------+
                            ↓
 +--------------------------------------------------+
 |             DEMAND SIGNAL PROCESSING             |
-| Price Elasticity | Event| Trends| Back testing   |
+| Price Elasticity | Event Spikes | RPS | ROAS     |
 +--------------------------+----------------------+
                            ↓
 +--------------------------------------------------+
